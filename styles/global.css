@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+
+    --main-width: 100vw;
+    --main-height: 100vh;
+
+    /* DARK */
+    --secondary-backgroundDark: #222222;
+    --primary-backgroundDark: #141414;
+    --secondary-texDark: #0e0e0e;
+    --primary-textDark: #000;
+
+    /* LIGHT */
+    --textLight: #fff
+}

@@ -1,0 +1,216 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+
+}
+
+.imgBackground {
+    background-position: top 5rem;
+    position: absolute;
+    background-size: contain;
+    width: 214.2vh;
+    z-index: -1;
+
+}
+
+/* HEADER */
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 8rem;
+    padding: 1.3rem 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0000005a;
+    backdrop-filter: blur(5px);
+    z-index: -1;
+}
+
+.header::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    /* background: linear-gradient(90deg, transparent, #00800079, transparent); */
+    background: url(../src/image/urubu.png);
+    background-repeat: no-repeat;
+    background-size: 8rem;
+    transition: 2s;
+}
+
+.header:hover::after {
+    left: 100%;
+}
+
+.logo img {
+    width: 6rem;
+}
+
+.navbar a {
+    font-size: 1.15rem;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 1.5rem;
+}
+
+#check {
+    display: none;
+}
+
+.icons {
+    position: absolute;
+    right: 5%;
+    font-size: 2.8rem;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+}
+
+.icons img {
+    width: 2rem;
+}
+
+/* MAIN */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(90deg, rgba(222,159,33,1) 0%, rgba(232,166,86,0.8953781341638218) 0%);
+}
+
+.start {
+    padding-top: 8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    height: 100vh;
+    width: 100%;
+    padding: 0 1rem;
+    
+}
+
+
+.logo-principal {
+    width: 80vw;
+};
+
+.start p{
+    color: #ffffff ; 
+    font-weight: 700;
+    font-size: 5vw;
+}
+
+/* catalago-cards */
+.catalago-cards {
+    
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.1rem;
+    margin-bottom: 1rem;    
+}
+
+.info-comentary{
+    backdrop-filter: blur(5px);
+    position: fixed;
+    top: 9rem;
+    background-color: #0000005a;
+    width: 90%;
+    height: 70%;
+    border-radius: 1rem;
+    padding: 1rem 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.info-comentary img{
+    width: 2rem;
+    
+}
+
+.comentary {
+    margin-top: 6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;  
+    color: #fff; 
+}
+
+.write-comentary{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.write-comentary input{
+    width: 60vw;
+    border: none;
+    height: 2rem;
+    border-radius: 1rem 0 0 1rem;
+}
+
+.write-comentary button{
+    width: 5rem;
+    border: none;
+    height: 2rem;
+    border-radius: 0 1rem 1rem 0;
+    background-color: rgb(0, 146, 36);
+}
+
+.card {
+    margin: 0 1rem;
+    width: 100vw;
+    margin-top: 8rem;
+    height: 100%;
+    position: relative;
+    
+}
+
+.card img {
+    width: 100%;
+    border-radius: 1rem;
+    box-shadow: 0 0 1rem 0 #fff;
+}
+
+.card h2 {
+    font-size: 8vw;
+    position: absolute;
+    bottom: 1px;
+    color: #fff;
+    padding: 0 0 0.5rem 1rem;
+}

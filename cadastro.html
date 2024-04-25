@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/global.css">
+    <link rel="stylesheet" href="./styles/cadastro-style.css">
+    <link rel="stylesheet" href="./styles/responsive.css">
+    <link rel="shortcut icon" href="./src/icons/favicon.ico" type="image/x-icon">
+    <title>Cadastro</title>
+</head>
+
+<body class="body">
+    <main class="container">
+        <img class="imgVer-o-peso" src="./src/image/ver-o-peso.jpg" alt="imagem ver-o-peso">
+        <form class="form-register" action="">
+            <h1 class="text-register">Cadastre-se</h1>
+            <div class="inputs">
+                <input id="input-name" class="inputs-infos" type="text" placeholder="Digite seu nome" autofocus="true" required>
+                <input id="input-email" class="inputs-infos" type="email" placeholder="Digite seu email" required>
+                <input id="input-password" class="inputs-infos" type="password" placeholder="Digite sua senha" required>
+                <select id="select-type" class="options-contact-register inputs-infos" required>
+                    <option value="" disabled selected>Selecione meio de contato</option>
+                    <option value="opcao1">Gmail</option>
+                    <option value="opcao2">Outlook</option>
+                </select>
+            </div>
+            <button id="button-register" class="button-register" type="submit">Cadastrar</button>
+            <span class="login-option">Já tem conta? <a href="./login.html">clique aqui</a></span>
+        </form>
+
+    </main>
+</body>
+</html>
